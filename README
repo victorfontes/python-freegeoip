@@ -1,0 +1,30 @@
+Python-FreeGeoData
+Copyright (C) 2010 Victor Fontes - http://victorfontes.com
+
+Searches Geolocation of IP addresses using http://freegeoip.net/
+It will fetch a csv and return a python dictionary
+
+Sample Usage:
+>>> from freegeoip import get_geodata
+>>> get_geodata("189.24.179.76")
+
+{'status': True, 'city': 'Niter\xc3\xb3i', 'countrycode': 'BR', 'ip': '189.24.179.76', 
+'zipcode': '', 'longitude': '-43.0944', 'countryname': 'Brazil', 'regioncode': '21', 
+'latitude': '-22.8844', 'regionname': 'Rio de Janeiro'}
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Library General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Library General Public License for more details.
+
+You should have received a copy of the GNU Library General Public
+License along with this library; if not, write to the Free
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+
+
