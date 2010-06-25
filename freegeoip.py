@@ -62,4 +62,13 @@ def get_geodata(ip):
 
 if __name__ == "__main__":     #code to execute if called from command-line
     ip = sys.argv[1]
-    print get_geodata(ip)
+    geodata = get_geodata(ip)
+    print "IP: %s" % geodata["ip"]
+    print "Country Code: %s" % geodata["countrycode"]
+    print "Country Name: %s" % geodata["countryname"]
+    print "Region Code: %s" % geodata["regioncode"]
+    print "Region Name: %s" % geodata["regionname"]
+    print "City: %s" % geodata["city"]
+    print "Zip Code: %s" % geodata["zipcode"]
+    print "Latitude: %s" % geodata["latitude"]
+    print "Longitude: %s" % geodata["longitude"]
