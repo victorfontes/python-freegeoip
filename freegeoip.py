@@ -36,7 +36,7 @@ def valid_ip(ip):
 
     return re.match(pattern, ip)
 
-def _get_geodata_csv(ip):
+def __get_geodata_csv(ip):
     if not valid_ip(ip):
         raise Exception('Invalid IP format', 'You must enter a valid ip format: X.X.X.X')
     
@@ -58,11 +58,11 @@ def _get_geodata_csv(ip):
     }
 
 def get_geodata(ip):
-    return _get_geodata_csv(ip)
+    return __get_geodata_csv(ip)
 
 if __name__ == "__main__":     #code to execute if called from command-line
-    ip = sys.argv[1]
-    geodata = get_geodata(ip)
+    intput_ip = sys.argv[1]
+    geodata = get_geodata(intput_ip)
     print "IP: %s" % geodata["ip"]
     print "Country Code: %s" % geodata["countrycode"]
     print "Country Name: %s" % geodata["countryname"]
